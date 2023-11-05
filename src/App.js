@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import "bootstrap/dist/css/bootstrap.css";
 import './App.css';
+import NavBar from './components/navbar';
 
 function App() {
+  const [activeItem, setActiveItem] = useState(0); // Initialize the active item
+
+  const handleNavItemClick = (item) => {
+    setActiveItem(item);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h5>Dashboard</h5>
+      <NavBar activeItem={activeItem} handleNavItemClick={handleNavItemClick} />
     </div>
   );
 }
