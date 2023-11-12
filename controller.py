@@ -10,7 +10,14 @@ class Controller(object):
     def upload_poster(self, poster: json):
         new_poster = jsonpickle.decode(poster)
         #TODO: upload to csv database
-
-        print(new_poster)
+        try:
+            self.db.upload(poster)
+            print(new_poster)
+        except Exception as e:
+            print(e)
+    
+    def get_all(self):
+        posters = self.db.get()
+        return posters
     
     
