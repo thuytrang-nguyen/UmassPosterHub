@@ -2,7 +2,7 @@ import React from "react";
 import "./navbar.css";
 
 const NavBar = (props) => {
-  const items = ["Art", "Education", "Social", "Politics", "Campaign", "Movie"];
+  const items = ["All", "Art", "Education", "Social", "Politics", "Campaign", "Movie"];
 
   return (
     <nav className="navbar navbar-expand-lg bg-body-white">
