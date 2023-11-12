@@ -4,15 +4,15 @@
 
 .nav-item {
   margin-right: 1rem;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
   font-family: 'Segoe UI';
 }
 
 .active-line {
   margin: 0 auto;
-  background-color: #007bff;
-  height: 1.5px;
+  background-color: #881c1c;
+  height: 2px;
   width: 40%;
   left: 30%;
   bottom: 0;

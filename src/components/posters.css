@@ -1,0 +1,16 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+  gap: 20px;
+}
+
+.grid-item {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+}
+
+.grid-item img {
+  max-width: 100%;
+  max-height: 100%;
+}
